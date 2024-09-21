@@ -164,6 +164,7 @@ Partial Class Form1
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.TabControl1.SuspendLayout()
         Me.Introduction.SuspendLayout()
         Me.Standard.SuspendLayout()
@@ -208,6 +209,7 @@ Partial Class Form1
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -225,6 +227,7 @@ Partial Class Form1
         '
         'Introduction
         '
+        Me.Introduction.Controls.Add(Me.PictureBox8)
         Me.Introduction.Controls.Add(Me.Label62)
         Me.Introduction.Controls.Add(Me.Label61)
         Me.Introduction.Controls.Add(Me.Label60)
@@ -1689,6 +1692,16 @@ Partial Class Form1
         Me.PictureBox7.TabIndex = 8
         Me.PictureBox7.TabStop = False
         '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.VBPlayground.My.Resources.Resources.Wenomechainsama
+        Me.PictureBox8.Location = New System.Drawing.Point(670, 49)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(534, 434)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox8.TabIndex = 12
+        Me.PictureBox8.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1697,8 +1710,10 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(1350, 741)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "VBPlayground"
@@ -1775,6 +1790,7 @@ Partial Class Form1
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1921,4 +1937,5 @@ Partial Class Form1
     Friend WithEvents Label60 As Label
     Friend WithEvents Label59 As Label
     Friend WithEvents Label58 As Label
+    Friend WithEvents PictureBox8 As PictureBox
 End Class
